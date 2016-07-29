@@ -3,6 +3,10 @@
   <h2>
     <%= link_to link.title, link %><br>
     <small class="author">Submitted <%= time_ago_in_words(link.created_at) %> by <%= link.user.email %></small>
+    <p style="font-size: 12px;">
+      <br/>
+        Comments: <%= link.comments.count %>
+    </p>
   </h2>
   
   <div class="btn-group">
